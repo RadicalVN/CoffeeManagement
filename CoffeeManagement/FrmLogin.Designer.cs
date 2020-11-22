@@ -1,6 +1,6 @@
 ﻿namespace CoffeeManagement
 {
-    partial class frmLogin
+    partial class FrmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblUserName = new System.Windows.Forms.Label();
-            this.tbxUserName = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.txbPassword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tbxUserName = new System.Windows.Forms.TextBox();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,31 +54,34 @@
             this.panel1.Size = new System.Drawing.Size(314, 113);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // btnLogin
             // 
-            this.panel2.Controls.Add(this.tbxUserName);
-            this.panel2.Controls.Add(this.lblUserName);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(308, 35);
-            this.panel2.TabIndex = 0;
+            this.btnLogin.Location = new System.Drawing.Point(146, 85);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "Đăng nhập";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // lblUserName
+            // btnExit
             // 
-            this.lblUserName.AutoSize = true;
-            this.lblUserName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.Location = new System.Drawing.Point(3, 9);
-            this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(134, 19);
-            this.lblUserName.TabIndex = 0;
-            this.lblUserName.Text = "Tên đăng nhập :";
+            this.btnExit.Location = new System.Drawing.Point(233, 85);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 4;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // tbxUserName
+            // panel3
             // 
-            this.tbxUserName.Location = new System.Drawing.Point(143, 8);
-            this.tbxUserName.Name = "tbxUserName";
-            this.tbxUserName.Size = new System.Drawing.Size(162, 20);
-            this.tbxUserName.TabIndex = 1;
+            this.panel3.Controls.Add(this.txbPassword);
+            this.panel3.Controls.Add(this.lblPassword);
+            this.panel3.Location = new System.Drawing.Point(3, 44);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(308, 35);
+            this.panel3.TabIndex = 2;
             // 
             // txbPassword
             // 
@@ -98,34 +101,33 @@
             this.lblPassword.TabIndex = 0;
             this.lblPassword.Text = "Mật khẩu :";
             // 
-            // panel3
+            // panel2
             // 
-            this.panel3.Controls.Add(this.txbPassword);
-            this.panel3.Controls.Add(this.lblPassword);
-            this.panel3.Location = new System.Drawing.Point(3, 44);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(308, 35);
-            this.panel3.TabIndex = 2;
+            this.panel2.Controls.Add(this.tbxUserName);
+            this.panel2.Controls.Add(this.lblUserName);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(308, 35);
+            this.panel2.TabIndex = 0;
             // 
-            // btnExit
+            // tbxUserName
             // 
-            this.btnExit.Location = new System.Drawing.Point(233, 85);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 4;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.tbxUserName.Location = new System.Drawing.Point(143, 8);
+            this.tbxUserName.Name = "tbxUserName";
+            this.tbxUserName.Size = new System.Drawing.Size(162, 20);
+            this.tbxUserName.TabIndex = 1;
             // 
-            // btnLogin
+            // lblUserName
             // 
-            this.btnLogin.Location = new System.Drawing.Point(146, 85);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 3;
-            this.btnLogin.Text = "Đăng nhập";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.Location = new System.Drawing.Point(3, 9);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(134, 19);
+            this.lblUserName.TabIndex = 0;
+            this.lblUserName.Text = "Tên đăng nhập :";
             // 
-            // frmLogin
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -133,14 +135,15 @@
             this.ClientSize = new System.Drawing.Size(338, 137);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmLogin";
+            this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmLogin_FormClosing);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

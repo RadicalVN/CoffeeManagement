@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CoffeeManagement
 {
-    public partial class frmLogin : Form
+    public partial class FrmSaleManagement : Form
     {
-        public frmLogin()
+        public FrmSaleManagement()
         {
             InitializeComponent();
         }
