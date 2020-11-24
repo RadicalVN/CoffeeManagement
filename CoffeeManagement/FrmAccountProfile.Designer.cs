@@ -36,23 +36,23 @@
             this.lblDisplayName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.txbReEnterPass = new System.Windows.Forms.TextBox();
+            this.lblPasswordReEnter = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.txbNewPassWord = new System.Windows.Forms.TextBox();
+            this.lblNewPassword = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txbPassword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.lblNewPassword = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.txbNewPassWord = new System.Windows.Forms.TextBox();
-            this.lblPasswordReEnter = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txbReEnterPass = new System.Windows.Forms.TextBox();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // txbUserName
@@ -122,6 +122,80 @@
             this.panel1.Size = new System.Drawing.Size(314, 244);
             this.panel1.TabIndex = 0;
             // 
+            // btnExit
+            // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.Location = new System.Drawing.Point(236, 214);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 7;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(155, 214);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.Text = "Cập nhật";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.txbReEnterPass);
+            this.panel6.Controls.Add(this.lblPasswordReEnter);
+            this.panel6.Location = new System.Drawing.Point(3, 167);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(308, 35);
+            this.panel6.TabIndex = 5;
+            // 
+            // txbReEnterPass
+            // 
+            this.txbReEnterPass.Location = new System.Drawing.Point(143, 8);
+            this.txbReEnterPass.Name = "txbReEnterPass";
+            this.txbReEnterPass.Size = new System.Drawing.Size(162, 20);
+            this.txbReEnterPass.TabIndex = 5;
+            this.txbReEnterPass.UseSystemPasswordChar = true;
+            // 
+            // lblPasswordReEnter
+            // 
+            this.lblPasswordReEnter.AutoSize = true;
+            this.lblPasswordReEnter.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPasswordReEnter.Location = new System.Drawing.Point(3, 9);
+            this.lblPasswordReEnter.Name = "lblPasswordReEnter";
+            this.lblPasswordReEnter.Size = new System.Drawing.Size(81, 19);
+            this.lblPasswordReEnter.TabIndex = 5;
+            this.lblPasswordReEnter.Text = "Nhập lại :";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.txbNewPassWord);
+            this.panel5.Controls.Add(this.lblNewPassword);
+            this.panel5.Location = new System.Drawing.Point(3, 126);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(308, 35);
+            this.panel5.TabIndex = 4;
+            // 
+            // txbNewPassWord
+            // 
+            this.txbNewPassWord.Location = new System.Drawing.Point(143, 8);
+            this.txbNewPassWord.Name = "txbNewPassWord";
+            this.txbNewPassWord.Size = new System.Drawing.Size(162, 20);
+            this.txbNewPassWord.TabIndex = 4;
+            this.txbNewPassWord.UseSystemPasswordChar = true;
+            // 
+            // lblNewPassword
+            // 
+            this.lblNewPassword.AutoSize = true;
+            this.lblNewPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewPassword.Location = new System.Drawing.Point(3, 9);
+            this.lblNewPassword.Name = "lblNewPassword";
+            this.lblNewPassword.Size = new System.Drawing.Size(121, 19);
+            this.lblNewPassword.TabIndex = 4;
+            this.lblNewPassword.Text = "Mật khẩu mới :";
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.txbPassword);
@@ -149,85 +223,12 @@
             this.lblPassword.TabIndex = 3;
             this.lblPassword.Text = "Mật khẩu :";
             // 
-            // lblNewPassword
-            // 
-            this.lblNewPassword.AutoSize = true;
-            this.lblNewPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewPassword.Location = new System.Drawing.Point(3, 9);
-            this.lblNewPassword.Name = "lblNewPassword";
-            this.lblNewPassword.Size = new System.Drawing.Size(121, 19);
-            this.lblNewPassword.TabIndex = 4;
-            this.lblNewPassword.Text = "Mật khẩu mới :";
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.txbNewPassWord);
-            this.panel5.Controls.Add(this.lblNewPassword);
-            this.panel5.Location = new System.Drawing.Point(3, 126);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(308, 35);
-            this.panel5.TabIndex = 4;
-            // 
-            // txbNewPassWord
-            // 
-            this.txbNewPassWord.Location = new System.Drawing.Point(143, 8);
-            this.txbNewPassWord.Name = "txbNewPassWord";
-            this.txbNewPassWord.Size = new System.Drawing.Size(162, 20);
-            this.txbNewPassWord.TabIndex = 4;
-            this.txbNewPassWord.UseSystemPasswordChar = true;
-            // 
-            // lblPasswordReEnter
-            // 
-            this.lblPasswordReEnter.AutoSize = true;
-            this.lblPasswordReEnter.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPasswordReEnter.Location = new System.Drawing.Point(3, 9);
-            this.lblPasswordReEnter.Name = "lblPasswordReEnter";
-            this.lblPasswordReEnter.Size = new System.Drawing.Size(81, 19);
-            this.lblPasswordReEnter.TabIndex = 5;
-            this.lblPasswordReEnter.Text = "Nhập lại :";
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.txbReEnterPass);
-            this.panel6.Controls.Add(this.lblPasswordReEnter);
-            this.panel6.Location = new System.Drawing.Point(3, 167);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(308, 35);
-            this.panel6.TabIndex = 5;
-            // 
-            // txbReEnterPass
-            // 
-            this.txbReEnterPass.Location = new System.Drawing.Point(143, 8);
-            this.txbReEnterPass.Name = "txbReEnterPass";
-            this.txbReEnterPass.Size = new System.Drawing.Size(162, 20);
-            this.txbReEnterPass.TabIndex = 5;
-            this.txbReEnterPass.UseSystemPasswordChar = true;
-            // 
-            // btnExit
-            // 
-            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(236, 214);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 7;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(155, 214);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 6;
-            this.btnUpdate.Text = "Cập nhật";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
             // FrmAccountProfile
             // 
             this.AcceptButton = this.btnUpdate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(336, 266);
             this.Controls.Add(this.panel1);
@@ -239,12 +240,12 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -80,6 +80,7 @@
             this.mnsiAdmin.Name = "mnsiAdmin";
             this.mnsiAdmin.Size = new System.Drawing.Size(55, 20);
             this.mnsiAdmin.Text = "Admin";
+            this.mnsiAdmin.Click += new System.EventHandler(this.mnsiAdmin_Click);
             // 
             // mnsiAccount
             // 

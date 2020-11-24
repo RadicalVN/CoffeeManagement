@@ -27,5 +27,11 @@ namespace CoffeeManagement
             FrmAccountProfile frm = new FrmAccountProfile();
             frm.Show();
         }
+
+        private void mnsiAdmin_Click(object sender, EventArgs e)
+        {
+            FrmAdmin frm = new FrmAdmin();
+            frm.ShowDialog();
+        }
     }
 }
