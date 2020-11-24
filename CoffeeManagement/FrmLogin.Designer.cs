@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ckbSavePassword = new System.Windows.Forms.CheckBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -38,7 +39,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbUserName = new System.Windows.Forms.TextBox();
             this.lblUserName = new System.Windows.Forms.Label();
-            this.ckbSavePassword = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -56,6 +56,17 @@
             this.panel1.Size = new System.Drawing.Size(314, 113);
             this.panel1.TabIndex = 0;
             // 
+            // ckbSavePassword
+            // 
+            this.ckbSavePassword.AutoSize = true;
+            this.ckbSavePassword.Location = new System.Drawing.Point(3, 89);
+            this.ckbSavePassword.Name = "ckbSavePassword";
+            this.ckbSavePassword.Size = new System.Drawing.Size(91, 17);
+            this.ckbSavePassword.TabIndex = 1;
+            this.ckbSavePassword.Text = "Lưu mật khẩu";
+            this.ckbSavePassword.UseVisualStyleBackColor = true;
+            this.ckbSavePassword.CheckedChanged += new System.EventHandler(this.ckbSavePassword_CheckedChanged);
+            // 
             // btnLogin
             // 
             this.btnLogin.Location = new System.Drawing.Point(146, 85);
@@ -68,6 +79,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(233, 85);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
@@ -129,22 +141,13 @@
             this.lblUserName.TabIndex = 0;
             this.lblUserName.Text = "Tên đăng nhập :";
             // 
-            // ckbSavePassword
-            // 
-            this.ckbSavePassword.AutoSize = true;
-            this.ckbSavePassword.Location = new System.Drawing.Point(3, 89);
-            this.ckbSavePassword.Name = "ckbSavePassword";
-            this.ckbSavePassword.Size = new System.Drawing.Size(91, 17);
-            this.ckbSavePassword.TabIndex = 1;
-            this.ckbSavePassword.Text = "Lưu mật khẩu";
-            this.ckbSavePassword.UseVisualStyleBackColor = true;
-            this.ckbSavePassword.CheckedChanged += new System.EventHandler(this.ckbSavePassword_CheckedChanged);
-            // 
             // FrmLogin
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(338, 137);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
