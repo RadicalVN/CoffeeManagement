@@ -15,6 +15,15 @@ namespace CoffeeManagement
         public FrmLogin()
         {
             InitializeComponent();
+
+            // Lưu ý phát triển: 
+            // Trước khi logout, lưu lại trạng thái checkbox và thông tin tài khoản đăng nhập trước khi logout
+
+            // sau khi load form, kiểm tra checkbox, 
+            // Nếu đang check thì load thông tin tài khoản đăng nhập trước khi logout lên
+            // Clear thông tin đăng nhập nếu không tick checkbox ckbSavePassword
+            // Lưu trạng thái checkbox ckbSavePassword
+
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -30,6 +39,14 @@ namespace CoffeeManagement
                 // Luu ý phát triển: truyền vào parameter, xác định quyền (Login vào Account nào)
                 FrmSaleManagement FrmSale = new FrmSaleManagement();
                 FrmSale.ShowDialog();
+
+                // Clear thông tin đăng nhập nếu không tick checkbox lưu pass
+                // Lưu trạng thái checkbox ckbSavePassword
+                if (ckbSavePassword.CheckState != CheckState.Checked)
+                {
+                    txbUserName.Text = "";
+                    txbPassword.Text = "";
+                }
 
                 // Mở lại FrmLogin
                 this.Show();
@@ -63,6 +80,11 @@ namespace CoffeeManagement
             //    e.Cancel = true;
             //}
             #endregion
+        }
+
+        private void ckbSavePassword_CheckedChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

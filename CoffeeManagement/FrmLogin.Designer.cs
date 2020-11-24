@@ -36,8 +36,9 @@
             this.txbPassword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tbxUserName = new System.Windows.Forms.TextBox();
+            this.txbUserName = new System.Windows.Forms.TextBox();
             this.lblUserName = new System.Windows.Forms.Label();
+            this.ckbSavePassword = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -45,6 +46,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.ckbSavePassword);
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.panel3);
@@ -103,19 +105,19 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.tbxUserName);
+            this.panel2.Controls.Add(this.txbUserName);
             this.panel2.Controls.Add(this.lblUserName);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(308, 35);
             this.panel2.TabIndex = 0;
             // 
-            // tbxUserName
+            // txbUserName
             // 
-            this.tbxUserName.Location = new System.Drawing.Point(143, 8);
-            this.tbxUserName.Name = "tbxUserName";
-            this.tbxUserName.Size = new System.Drawing.Size(162, 20);
-            this.tbxUserName.TabIndex = 1;
+            this.txbUserName.Location = new System.Drawing.Point(143, 8);
+            this.txbUserName.Name = "txbUserName";
+            this.txbUserName.Size = new System.Drawing.Size(162, 20);
+            this.txbUserName.TabIndex = 1;
             // 
             // lblUserName
             // 
@@ -126,6 +128,17 @@
             this.lblUserName.Size = new System.Drawing.Size(134, 19);
             this.lblUserName.TabIndex = 0;
             this.lblUserName.Text = "Tên đăng nhập :";
+            // 
+            // ckbSavePassword
+            // 
+            this.ckbSavePassword.AutoSize = true;
+            this.ckbSavePassword.Location = new System.Drawing.Point(3, 89);
+            this.ckbSavePassword.Name = "ckbSavePassword";
+            this.ckbSavePassword.Size = new System.Drawing.Size(91, 17);
+            this.ckbSavePassword.TabIndex = 1;
+            this.ckbSavePassword.Text = "Lưu mật khẩu";
+            this.ckbSavePassword.UseVisualStyleBackColor = true;
+            this.ckbSavePassword.CheckedChanged += new System.EventHandler(this.ckbSavePassword_CheckedChanged);
             // 
             // FrmLogin
             // 
@@ -140,6 +153,7 @@
             this.Text = "Đăng nhập";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmLogin_FormClosing);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -157,8 +171,9 @@
         private System.Windows.Forms.TextBox txbPassword;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox tbxUserName;
+        private System.Windows.Forms.TextBox txbUserName;
         private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.CheckBox ckbSavePassword;
     }
 }
 

@@ -16,5 +16,16 @@ namespace CoffeeManagement
         {
             InitializeComponent();
         }
+
+        private void mnsiLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void mnsiAccountInfo_Click(object sender, EventArgs e)
+        {
+            FrmAccountProfile frm = new FrmAccountProfile();
+            frm.Show();
+        }
     }
 }
